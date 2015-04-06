@@ -76,7 +76,7 @@ def main():
                     for weight in coll_element.split(b'.'):
                         weights.append(int(weight, 16))
 
-                    colls.append((variable, weights))
+                    colls.append([weights, variable])
 
                 ducet_table[uni_chars] = colls
 
